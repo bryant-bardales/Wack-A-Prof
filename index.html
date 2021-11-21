@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <audio id="music" loop autoplay><source src="music/Game music.mp3" type = "audio/mp3"></audio>
 
 <head>
   <meta charset="UTF-8">
@@ -11,6 +12,7 @@
 <body> 
 
   <h1>Whack-A-Prof!</h1>
+  <h1><a id="button" onclick="plays();">Pause music</a></h1>
   <h1 class="score"> 0</h1>
   <div class = "start">
   <button onClick="gameStart()">Start!</button>
