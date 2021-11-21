@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #f3f2e2 0%, #f3f2e2 74%);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.start{
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+  .score {
+    color: rgb(104, 94, 114);
+    margin-top: 0%;
+  
+   }
+
+   .game {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  
+  }
+  
+  .hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  .hole:after {
+    display: block;
+    background: url(images/desk.png) bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+    }
+
+  .prof{
+    background: url(images/prof.png) bottom center no-repeat;
+    background-size: 40%; /* Sized to fit the game */
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s ease;
+  }
+
+  .prof2{
+    background: url(images/prof2.png) bottom center no-repeat;
+    background-size: 30%; /* Sized to fit the game */
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s ease;
+  }
+
+  .prof3{
+    background: url(images/prof3.png) bottom center no-repeat;
+    background-size: 35%; /* Sized to fit the game */
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s ease;
+  }
+  
+  .prof4 {
+    background: url(images/prof4.png) bottom center no-repeat;
+    background-size: 50%; /* Sized to fit the game */
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s ease;
+  }
+  .hole.up .prof{
+    top: 0;
+    }
+
+  .hole.up .prof2{
+    top: 0;
+    }
+
+  .hole.up .prof3{
+    top: 0;
+    }
+
+  .hole.up .prof4{
+    top: 0;
+    }
+
+  button {
+  background: rgba(0, 0, 0, 0.2);
+  border: rgb(180, 183, 187);
+  font-size: 3rem;
+  cursor: pointer;
+}
