@@ -1,11 +1,11 @@
-const scoreDisplay = document.querySelector('.score');
-const holes = document.querySelectorAll('.hole');
+const scoreDisplay = document.querySelector('.score');//Score Display
+const desks = document.querySelectorAll('.desk');//
 const prof = document.querySelectorAll('.prof');
 const prof2 = document.querySelectorAll('.prof2');
 const prof3 = document.querySelectorAll('.prof3');
 const prof4 = document.querySelectorAll('.prof4');
 
-let lastHole;
+let lastDesk;
 let endTime;
 let scr = 0;
 
@@ -15,22 +15,22 @@ function randTime(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
-function randHole(holes) {
-  const i = Math.floor(Math.random() * holes.length);
-  const hole = holes[i];
-  if (hole === lastHole) {
-    return randHole(holes);
+function randDesk(desks) {
+  const i = Math.floor(Math.random() * desks.length);
+  const desk = desks[i];
+  if (desk === lastDesk) {
+    return randDesk(desks);
   }
-  lastHole = hole;
-  return hole;
+  lastDesk = desk;
+  return desk;
 }
 
 function popOut() {
   const time = randTime(200, 1000);
-  const hole = randHole(holes);
-  hole.classList.add('up');
+  const desk = randDesk(desks);
+  desk.classList.add('up');
   setTimeout(() => {
-    hole.classList.remove('up');
+    desk.classList.remove('up');
     if (!endTime) popOut();
   }, time);
 }

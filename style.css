@@ -40,14 +40,14 @@ h1 {
   
   }
   
-  .hole {
+  .desk {
     flex: 1 0 33.33%;
     overflow: hidden;
     position: relative;
   }
 
 
-  .hole:after {
+  .desk:after {
     display: block;
     background: url(images/desk.png) bottom center no-repeat;
     background-size: contain;
@@ -98,19 +98,19 @@ h1 {
     height: 100%;
     transition:all 0.4s ease;
   }
-  .hole.up .prof{
+  .desk.up .prof{
     top: 0;
     }
 
-  .hole.up .prof2{
+  .desk.up .prof2{
     top: 0;
     }
 
-  .hole.up .prof3{
+  .desk.up .prof3{
     top: 0;
     }
 
-  .hole.up .prof4{
+  .desk.up .prof4{
     top: 0;
     }
 
