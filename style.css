@@ -58,7 +58,8 @@ h1 {
     z-index: 2;
     bottom: -30px;
     }
-
+  
+  /*Image sizing for image of prof.png */
   .prof{
     background: url(images/prof.png) bottom center no-repeat;
     background-size: 40%; /* Sized to fit the game */
@@ -69,6 +70,7 @@ h1 {
     transition:all 0.4s ease;
   }
 
+  /*Image sizing for image of prof2.png */
   .prof2{
     background: url(images/prof2.png) bottom center no-repeat;
     background-size: 30%; /* Sized to fit the game */
@@ -79,6 +81,7 @@ h1 {
     transition:all 0.4s ease;
   }
 
+  /*Image sizing for image of prof3.png */
   .prof3{
     background: url(images/prof3.png) bottom center no-repeat;
     background-size: 35%; /* Sized to fit the game */
@@ -89,6 +92,7 @@ h1 {
     transition:all 0.4s ease;
   }
   
+  /*Image sizing for image of prof4.png */
   .prof4 {
     background: url(images/prof4.png) bottom center no-repeat;
     background-size: 50%; /* Sized to fit the game */
@@ -98,6 +102,7 @@ h1 {
     height: 100%;
     transition:all 0.4s ease;
   }
+
   .desk.up .prof{
     top: 0;
     }
@@ -113,7 +118,7 @@ h1 {
   .desk.up .prof4{
     top: 0;
     }
-
+  /*Button sizing and color*/
   button {
   background: rgba(0, 0, 0, 0.2);
   border: rgb(180, 183, 187);

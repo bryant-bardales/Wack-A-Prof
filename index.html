@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+<!---Allows audio to play automatically on webpage and loop when song ends--->
   <audio id="music" loop autoplay><source src="music/Game music.mp3" type = "audio/mp3"></audio>
 
 <head>
@@ -11,41 +13,62 @@
 
 <body> 
 
-  <h1>Whack-A-Prof!</h1>
-  <h1><a id="button" onclick="plays();">Pause music</a></h1>
-  <h1 class="score"> 0</h1>
-  <div class = "start">
+  <h1>Whack-A-Prof!</h1> <!---Game title at top--->
+  <h1><a id="button" onclick="plays();">Pause music</a></h1> <!---Placing button with funcion on webpage to play and pause music--->
+  <h1 class="score"> 0</h1> <!---Placing score as "0" on webpage--->
+ 
+ <!---Placing start button on webpage with functiont that starts the game--->
+  <div class = "start"> 
   <button onClick="gameStart()">Start!</button>
   </div>
 
   <div class="game">
+
+    <!---Placing desk and prof image on webpage--->
     <div class="desk desk1">
       <div class="prof"></div>
     </div>
+
+    <!---Placing desk and prof2 image on webpage--->
     <div class="desk desk2">
       <div class="prof2"></div>
     </div>
+
+    <!---Placing desk and prof3 image on webpage--->
     <div class="desk desk3">
       <div class="prof3"></div>
     </div>
+
+    <!---Placing desk and prof4 image on webpage--->
     <div class="desk desk4">
       <div class="prof4"></div>
     </div>
+
+    <!---Placing desk and prof image on webpage--->
     <div class="desk desk5">
       <div class="prof"></div>
     </div>
+
+    <!---Placing desk and prof2 image on webpage--->
     <div class="desk desk6">
       <div class="prof2"></div>
     </div>
+
+    <!---Placing desk and prof3 image on webpage--->
     <div class="desk desk7">
       <div class="prof3"></div>
     </div>
+
+    <!---Placing desk and prof4 image on webpage--->
     <div class="desk desk8">
       <div class="prof4"></div>
     </div>
+
+    <!---Placing desk and prof image on webpage--->
     <div class="desk desk9">
       <div class="prof"></div>
     </div>
+
 </div>
 
 <script src="index.js"></script>
