@@ -11,7 +11,7 @@ let scr = 0;//Inital score set to 0
 
 var mySong = document.getElementById("music");//Song that plays when the game is being played.
 
-//Function to et a random amount of time in milliseconds
+//Function to get a random amount of time in milliseconds
 function randTime(min, max) { 
   return Math.round(Math.random() * (max - min) + min);
 }
