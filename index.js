@@ -47,6 +47,10 @@ function gameStart() {
   setTimeout(() => endTime = true, 60000)
 }
 
+function gameEnd(){
+  window.alert("You won the game!")
+}
+
 //Function makes the image go down when clicked on. 
 function whack(e) {
   if(!e.isTrusted) return; 
@@ -55,6 +59,14 @@ function whack(e) {
   scoreDisplay.textContent = scr;
 }
 
+function gameWin(){
+ if (scr === 30)
+ {
+   clearInterval(scr);
+   gameEnd();
+ }
+
+}
 
 //Allows for the user to click on the image that "pops up" and as a result the image will go down. 
 prof.forEach(prof => prof.addEventListener('click', whack));

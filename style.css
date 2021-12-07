@@ -3,7 +3,9 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   background-color: #ffffff;
-  background-image: linear-gradient(315deg, #f3f2e2 0%, #f3f2e2 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/classroom2.jpeg);
 }
 
 *, *:before, *:after {
@@ -20,6 +22,7 @@ body {
   text-align: center;
 }
 
+
 h1 {
   text-align: center;
   font-size: 5rem;
@@ -30,6 +33,12 @@ h1 {
     margin-top: 0%;
   
    }
+
+   .timer{
+    text-align:center;
+    color:rgb(0, 0, 0);
+    font-size:50px
+  }
 
    .game {
     width: 800px;
@@ -118,9 +127,31 @@ h1 {
   .desk.up .prof4{
     top: 0;
     }
-  /*Button sizing and color*/
-  button {
-  background: rgba(0, 0, 0, 0.2);
+
+
+h2{
+  text-align: center;
+  margin-bottom: 0;
+}
+ #rules{
+  color:black;
+  font-size: 2rem;
+ }
+
+ .score {
+  color: rgb(36, 0, 199);
+  font-size: 6rem;
+ }
+
+ .timer{
+  text-align:center;
+  color:rgb(0, 0, 0);
+  font-size:3rem;
+}
+
+/*Button sizing and color*/
+button {
+  background: rgba(197, 0, 0, 0.5);
   border: rgb(180, 183, 187);
   font-size: 3rem;
   cursor: pointer;
