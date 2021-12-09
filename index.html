@@ -8,7 +8,9 @@
   <meta charset="UTF-8">
   <title>Whack A Prof!</title>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css"  href="style.css"><!--the ideal connection with css  -->
+
+  <script src="index.js" defer></script><!--the script section should be like that -->
 </head>
 
 <body> 
@@ -16,15 +18,18 @@
   <h1><u>Whack A Prof!</u></h1> <!---Game title at top--->
   <h2><a id="button" onclick="plays();">Pause music</a></h2> <!---Placing button with funcion on webpage to play and pause music--->
   <div id='rules'><h2><u>Your Goal:</u> Wack 30 professors!</h2></div>
-  <h1 class="score"> 0 </h1> <!---Placing score as "0" on webpage--->
+  <h1 id="score"> 0 </h1> <!---Placing score as "0" on webpage--->
 
- 
+   </br>
+    <div id="timer"></div>
+    </br>
+    
  <!---Placing start button on webpage with functiont that starts the game--->
   <div class = "start"> 
   <button onClick="gameStart()">Start!</button>
   </div>
 
-  <div class="game">
+  <div id="game" style="display:none">
 
     <!---Placing desk and prof image on webpage--->
     <div class="desk desk1">
@@ -74,6 +79,20 @@
     
 
 </div>
-<script src="index.js"></script>
+ <!-- after launching the game your game board activates after Start button and 
+and then activates message for win or loose condition-->
+
+<div id="start" style="display:block">
+  <a href="#" onclick="startGame()">Start Game</a>
+  </div>
+  <div id="gameOver" style="display:none">
+    <h1>YOU ARE TOO SLOW</h1>
+    <a href="#" onclick="startGame()">Start Game</a>
+  </div>
+  <div id="gameOverWin" style="display:none">
+    <h1>WELL DONE!</h1>
+    <a href="#" onclick="startGame()">Start Game</a>
+  </div> 
+<!-- <script src="index.js"></script> -->
 </body>
 </html>

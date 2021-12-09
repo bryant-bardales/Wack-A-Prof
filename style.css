@@ -40,7 +40,7 @@ h1 {
     font-size:50px
   }
 
-   .game {
+   #game {
     width: 800px;
     height: 400px;
     display: flex;
@@ -138,7 +138,7 @@ h2{
   font-size: 2rem;
  }
 
- .score {
+ #score {
   color: rgb(36, 0, 199);
   font-size: 6rem;
  }
@@ -157,4 +157,30 @@ button {
   cursor: pointer;
   }
 
+
+  #timer{
+    color:blue;
+    font-size:50px
+  }
+
+  #start a,#gameOver a,#gameOverWin a{
+    border:3px solid rgb(233, 189, 189);
+    color :rgb(233, 189, 189);
+    text-decoration :none;
+    padding:10px;
+    border-radius:15px;
+    cursor:pointer;
+    display: block;
+    width:200px;
+    text-align:center;
+    font-size:2em;
+    display:inline-block;
+  }
+  #start a:hover,#gameOver a:hover{
+     background-color:  rgb(233, 189, 189); color: rgb(168, 15, 5);
+  }
+
+  #gameOverWin a:hover{
+    background-color:  rgb(233, 189, 189); color:green;
+  }
 
